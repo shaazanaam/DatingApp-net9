@@ -166,6 +166,16 @@ nCrunchTemp_*
 *.mm.*
 AutoTest.Net/
 
+# Node.js modules
+node_modules/
+
+# Angular-specific files and directories
+**/angular.json
+**/package-lock.json
+**/dist/
+**/.angular/
+
+
 # Web workbench (sass)
 .sass-cache/
 
