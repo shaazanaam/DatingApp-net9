@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   http = inject(HttpClient);
-  title = 'DatingApp';
+  title = 'myAPP-App';
   users: any;
  
   ngOnInit():void{
@@ -22,3 +22,6 @@ export class AppComponent implements OnInit {
     })
   }
 }
+
+
+// an HTTP request is always complete and we dont necesarily need to unsubscribe
