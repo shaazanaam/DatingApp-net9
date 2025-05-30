@@ -8,6 +8,11 @@ namespace API.Controllers;
 [ApiController]
 [Route("api/[controller]")]   // you will be browsing to the /api/users and then you will be routed to the 
                               // API controller  UsersController
+
+// the context parameter will be injected by the dependency injection system in the ASP.NET core 
+// the di system ensures that an instance of the DataContext is created and passed as the dependency through the constructor 
+//injection 
+
 public class UsersController(DataContext context) : ControllerBase
 {
       

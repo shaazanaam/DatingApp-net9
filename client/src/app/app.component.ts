@@ -11,9 +11,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   http = inject(HttpClient);
-  title = 'DatingApp';
+  title = 'myApp';
   users: any;
- 
+
   ngOnInit():void{
     this.http.get('https://localhost:5001/api/users').subscribe({
       next: response => this.users = response,
