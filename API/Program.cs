@@ -6,6 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //And register services with the DI container
+
+//useSqlite will be configuring the Entity Framework Core to use the SQlite as the database provider
+//builder.configuration.GetConnectionString("DefaultConnection") gets the connection string named "DefaultConnection"
+//from the appsettings.json file 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DataContext>(opt=>
 {
