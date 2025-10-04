@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.configuration.GetConnectionString("DefaultConnection") gets the connection string named "DefaultConnection"
 //from the appsettings.json file 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<DataContext>(opt=>
+builder.Services.AddDbContext<AppDbContext>(opt=>
 {
       opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
